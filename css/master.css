@@ -1,0 +1,697 @@
+/*Matthew James Muirhead*/
+/*Student Number: 16424341*/
+
+body {
+  display: flex; /* Defaults the display for all pages to flex */
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0; /* Removes any margins placed by the browser */
+  line-height: 100%;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 1.5em;
+  color: #333;
+}
+
+/********************************/
+/*            START             */
+/*          OF HOMEPAGE         */
+/*             CSS              */
+/********************************/
+
+#homepage {
+  min-height: 100vh;
+  font-size: 100%;
+  font-size: 1em; /* Source 1 */
+  /* equivalent to 16px */
+  line-height: 1.25; /* Source 1 */
+  /* equivalent to 20px */
+  background-image: url(../images/traffic.jpg);
+  top: 0;
+  height: 100%; /* Sets the page to fit the browser window */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  margin: 0;
+  overflow: hidden; /* Hides any of the image overflowing from the container*/
+  color: #DBDFE1;
+}
+
+/* Source 3 */
+#homepage::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .6;
+}
+/* End of source 3 */
+
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif; /* Sets default font for all text to roboto with a backup of sans-serif*/
+}
+
+h1, h2, h3 {
+  font-family: 'Montserrat', sans-serif; /* Sets default font for h1, h2 and h3 to roboto with a backup of sans-serif*/
+}
+
+/* source 1 */
+body {
+  font-size: 100%;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset, h1, h2, h3, h4, h5, h6 {
+  font-size-adjust: 0.5;
+}
+
+#page {
+  font-size: 1em;
+  /* equivalent to 16px */
+  line-height: 1.25;
+  /* equivalent to 20px */
+}
+
+@media (min-width: 43.75em) {
+  #page {
+    font-size: 1em;
+    /* equivalent to 16px */
+    line-height: 1.375;
+    /* equivalent to 22px */
+  }
+}
+
+h1 {
+  font-size: 2em;
+  /* 2x body copy size = 32px */
+  line-height: 1.25;
+  /* 45px / 36px */
+}
+
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 2.5em;
+    /* 2.5x body copy size = 40px */
+    line-height: 1.125;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 3em;
+    /* 3x body copy size = 48px */
+    line-height: 1.05;
+    /* keep to a multiple of the 20px line height and something more appropriate for display headings */
+  }
+}
+
+h2 {
+  font-size: 1.625em;
+  /* 1.625x body copy size = 26px */
+  line-height: 1.15384615;
+  /* 30px / 26px */
+}
+
+@media (min-width: 43.75em) {
+  h2 {
+    font-size: 2em;
+    /* 2x body copy size = 32px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h2 {
+    font-size: 2.25em;
+    /* 2.25x body copy size = 36px */
+    line-height: 1.25;
+  }
+}
+
+h3 {
+  font-size: 1.375em;
+  /* 1.375x body copy size = 22px */
+  line-height: 1.13636364;
+  /* 25px / 22px */
+}
+
+@media (min-width: 43.75em) {
+  h3 {
+    font-size: 1.5em;
+    /* 1.5x body copy size = 24px */
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 56.25em) {
+  h3 {
+    font-size: 1.75em;
+    /* 1.75x body copy size = 28px */
+    line-height: 1.25;
+  }
+}
+
+h4 {
+  font-size: 1.125em;
+  /* 1.125x body copy size = 18px */
+  line-height: 1.11111111;
+}
+
+@media (min-width: 43.75em) {
+  h4 {
+    line-height: 1.22222222;
+    /* (22px / 18px */
+  }
+}
+
+blockquote {
+  font-size: 1.25em;
+  /* 20px / 16px */
+  line-height: 1.25;
+  /* 25px / 20px */
+}
+
+@media (min-width: 43.75em) {
+  blockquote {
+    font-size: 1.5em;
+    /* 24px / 16px = */
+    line-height: 1.45833333;
+    /* 35px / 24px */
+  }
+}
+/* end of source 1*/
+
+.header-homepage {
+  /*background-image: url(../images/traffic.jpg);*/
+  min-height: 600px;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+
+.titles {
+  margin-top: -26em;
+  color: #DBDFE1;
+  position: relative;
+}
+
+.nav-tree { /* Dropdown navigation menu */
+  display: none;
+  position: relative;
+  list-style-type: none; /* Removes bullet points from the list */
+  line-height: 2.5em;
+  width: 7em;
+  text-align: left;
+  /*padding: 0.5em;*/
+  top: -30px;
+  margin: 0;
+  cursor: pointer;
+  margin-left: 2.3em; /* Moves the menu to the right side of the button */
+}
+
+.menu-container { /* Sets the location of the menu button */
+  padding: 2em;
+  height: 40%;
+  width: 15%;
+  float: left;
+  text-align: left;
+}
+
+.social-media-main { /* Sets the location of the social media buttons */
+  display: flex;
+  float: right;
+  width: 85%;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  padding-top: 1.5em;
+  align-self: flex-start;
+}
+
+.social-media-images {
+  padding: 10px;
+  width: 30px;
+  height: auto;
+}
+
+.linkedin, .github, .codepen {
+  padding-top: 15px;
+}
+
+.twitter {
+  padding-top: 18px;
+}
+
+/* Start of menu button */
+/* Source 2 */
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #DDD;
+    margin: 6px 0;
+    transition: 0.4s;
+    position: relative;
+    z-index: 100;
+}
+
+/* Rotate first bar */
+.menu:hover .bar1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+/* Fade out the second bar */
+.menu:hover .bar2 {
+    opacity: 0;
+}
+
+/* Rotate last bar */
+.menu:hover .bar3 {
+    transform: rotate(45deg) translate(-8px, -8px);
+}
+/* End of source 2 */
+
+.home-button {
+ color: #79C7D5;
+ box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+}
+
+.home-button:hover { /* Changes state of button when hovered over */
+ color: #000;
+ background-color: #79C7D5; /* Makes button a darker shade */
+ box-shadow: 0px -3px 0px 0px #79C7D5, 0px -5px 0px #79C7D5;
+ padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
+}
+
+.cv-button {
+  color: #2AAB9D;
+  box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
+  padding-bottom: 0.5em;
+  padding-left: 0.25em;
+  -webkit-margin-before: 0em; /* Overwrites default top spacing */
+  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+}
+
+.cv-button:hover { /* Changes state of button when hovered over */
+  color: #000;
+  background-color: #2AAB9D; /* Makes button a darker shade */
+  box-shadow: 0px -3px 0px 0px #2AAB9D, 0px -5px 0px #2AAB9D;
+  padding-bottom: 0.5em;
+  animation: animation-rotate 0.5s linear 1; /* Rotates button */
+}
+
+.bio-button {
+ color: #AFCF3E;
+ box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+}
+
+.bio-button:hover { /* Changes state of button when hovered over */
+ color: #000;
+ background-color: #AFCF3E; /* Makes button a darker shade */
+ box-shadow: 0px -3px 0px 0px #AFCF3E, 0px -5px 0px #AFCF3E;
+ padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
+}
+
+.contact-button {
+ color: #F2BA3F;
+ box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+ padding-bottom: 0.5em;
+ padding-left: 0.25em;
+ -webkit-margin-before: 0em; /* Overwrites default top spacing */
+ -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+}
+
+.contact-button:hover { /* Changes state of button when hovered over */
+ color: #000;
+ background-color: #F2BA3F; /* Makes button a darker shade */
+ box-shadow: 0px -3px 0px 0px #F2BA3F, 0px -5px 0px #F2BA3F;
+ padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1; /* Rotates button */
+}
+/* End of menu button */
+
+@keyframes animation-rotate { /* Rotate animation for the buttons */
+	0% {
+		transform: rotateX(0deg);
+	}
+	50% {
+		transform: rotateX(45deg);
+	}
+  100% {
+		transform: rotateX(0deg);
+	}
+}
+
+@keyframes load-in { /* Fade and slide in for homepage*/
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.menu:hover .nav-tree {
+  display: block;
+  cursor: pointer;
+}
+
+.read-more {
+  font-style: italic;
+  opacity: 0.6;
+  margin-left: 0.2em;
+  text-decoration: none;
+  color: #FFF;
+}
+
+.read-more:hover {
+  opacity: 1; /* Highlights text when hovered */
+  cursor: pointer;
+}
+
+.arrow-adjust {
+  margin-left: 8px; /* Aligns the arrow on the homepage with the text*/
+  margin-top: 24px;
+}
+
+.horizontal-container-homepage { /* Flexbox container in horizontal format */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+li {
+  list-style-type: none; /* Defaults lists to have no bullet point */
+}
+
+a {
+  text-decoration: none; /* Deaults links to have no underline */
+}
+
+/********************************/
+/*                              */
+/*       END OF HOMEPAGE        */
+/*            CSS               */
+/********************************/
+
+.nav {
+  order: -1;
+  background: #7DD6F6;
+  text-align: left;
+  height: 6em;
+}
+
+.logo-container {
+    width: 2em;
+    padding: 1em;
+}
+
+.logo {
+  height: 2em;
+  transform: translateY(55%);
+}
+
+.title-container {
+  margin-left: 2em;
+  width: auto;
+  padding: 1em;
+}
+
+.title-container h3 { /* Keeps the font size uniform when h3 is used inside title-container */
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+.header { /* Header */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.footer { /* Footer */
+  padding: 0.2em;
+  background: #005C7D;
+  text-align: center;
+  color: #F3F4F5;
+  height: 60px;
+}
+
+.wrapper { /* contains main and aside */
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+  min-height: 100%;
+}
+
+.main { /* Main content */
+  padding: 1em;
+  background: #F3F4F5;
+  text-align: left;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.bottom-image { /* Image at the bottom of the bio page */
+  background-image: url(../images/599XX-FXX-K-tall.png);
+  background-size: cover;
+  background-position: bottom;
+  padding-bottom: 7em;
+}
+
+.aside { /* Navigation section */
+  padding: 1em;
+  text-align: center;
+  background: #D8E3FD;
+  background-size: cover;
+  background-position: top;
+  background-size: auto 100%;
+}
+
+.aside-bio { /* Navigation background for bio */
+  background-image: url(../images/l1sqxjxbgd0-gabriel-santiago.jpg);
+}
+
+.aside-cv { /* Navigation background for cv */
+  background-image: url(../images/urmkfvtk3qw-caleb-george.jpg);
+}
+
+.aside-contact { /* Navigation background for contact */
+  background-image: url(../images/tzdmeykuboo-paul-genyk.jpg);
+}
+
+.desktop-nav { /* navigation layout in desktop layout */
+  position: relative;
+  list-style-type: none;
+  line-height: 2.5em;
+  width: 80%;
+  text-align: left;
+  /*padding: 0.5em;*/
+  top: 30px;
+  margin: 0;
+  cursor: pointer;
+  padding-left: 10%;
+}
+
+.nav-button { /* All buttons in the nav menu */
+  color: #7DD6F6;
+  box-shadow: 0px -3px 0px 0px #7DD6F6, 0px -5px 0px #7DD6F6;
+  padding-bottom: 0.5em;
+  padding-left: 1em;
+  -webkit-margin-before: 0em; /* Overwrites default top spacing */
+  -webkit-margin-after: 0em; /* Overwrites default bottom spacing */
+}
+
+.nav-button:hover {
+ color: #000;
+ background-color: #26BBF0;
+ box-shadow: 0px -3px 0px 0px #1790BB, 0px -5px 0px #1790BB;
+ padding-bottom: 0.5em;
+ animation: animation-rotate 0.5s linear 1;
+}
+
+.social-media { /* Social media buttons in footers */
+  display: flex;
+  float: right;
+  width: 100%;
+  text-align: right;
+  justify-content: flex-end;
+  padding-right: 0.5em;
+  align-self: flex-start;
+}
+
+p {
+  text-align: justify;
+}
+
+.main h3 {
+  text-align: left;
+  padding-left: 2em;
+}
+
+.picture-of-me { /* picture of me on homepage */
+    height: 8em;
+    margin-top: 7em;
+}
+
+.section-header {
+  text-align: left;
+  box-shadow: 0px 3px #1790BB;
+  position: relative;
+  width: 93%;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.horizontal-container { /* horizontal flexbox */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.subject-list {
+  padding-left: 0;
+  text-align: right;
+}
+
+.grades-list {
+  padding-left: 1em;
+}
+
+.remove-padding {
+  margin: 0;
+  padding: 0;
+}
+
+.gcse, .a-level, .higher-education {
+  width: 25%;
+}
+
+/* Source 4 */
+
+form {
+  border: solid black 1px;
+  padding: 1em;
+  min-width: 15em;
+  max-width: 50em;
+}
+
+.form-title {
+  margin-top: 0;
+}
+
+.form-group {
+  margin-bottom: 0.5em;
+}
+
+label {
+  display: inline-block;
+  vertical-align: top;
+  width: 30%;
+}
+
+textarea {
+  resize: vertical;
+  width: 65%;
+  height: 200px;
+  max-height: 500px;
+}
+/* End of source 4*/
+
+form {
+  width: 80%;
+  margin-left: 50%;
+  transform: translate(-50%);
+  padding-bottom: 2em;
+  background-color: #DBDFE1;
+}
+
+.form-name {
+  width: 65%;
+}
+
+.submit-button {
+  float: right
+}
+
+@media (max-width: 30em) { /* Mobile page modifications */
+  .main {
+    flex: 1 0 auto;
+  }
+  .aside {
+    padding-bottom: 3em;
+    background-size: cover;
+  }
+  .vertical-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .gcse {
+    width: 100%;
+  }
+  .a-level {
+    width: 100%;
+  }
+  .higher-education {
+    width: 100%;
+  }
+}
+
+@media (min-width: 30em) { /* Desktop modifications */
+  .nav {
+    display: block;
+  }
+  .wrapper {
+    flex-direction: row;
+  }
+  .main {
+    flex: 1 1 auto;
+    width: 80%
+  }
+  .aside {
+    width: 20%;
+    min-width: 7em;
+  }
+}
+
+@media (min-width: 43.75em) {
+
+}
+
+@media (min-width: 56.25em) {
+
+}
+
+.header-homepage, .titles {
+  animation: load-in 1s ease-out 1;
+}
+
+/************************************************************************************
+
+Source list
+
+1: Typecast. (2016). A More Modern Scale for Web Typography - Typecast. [online] Available at: http://typecast.com/blog/a-more-modern-scale-for-web-typography [Accessed 10 Dec. 2016].
+2: W3schools.com. (2016). How To Create a Menu Icon. [online] Available at: http://www.w3schools.com/howto/howto_css_menu_icon.asp [Accessed 10 Dec. 2016].
+3: div?, C. (2016). Can I set an opacity only to the background image of a div?. [online] Stackoverflow.com. Available at: http://stackoverflow.com/questions/7241341/can-i-set-an-opacity-only-to-the-background-image-of-a-div [Accessed 10 Dec. 2016].
+4: CodePen. (2016). HTML Form Example. [online] Available at: http://codepen.io/UoN-ThomasRose/pen/NbYrGj [Accessed 10 Dec. 2016].
+
+************************************************************************************/
